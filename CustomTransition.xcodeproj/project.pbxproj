@@ -7,21 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5BBC3D086E5F37BDEA1C7B50 /* Pods_CustomTransition.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0E596156E4AF57789669C40 /* Pods_CustomTransition.framework */; };
 		BBF63A0B22B2452F00106059 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF63A0A22B2452F00106059 /* AppDelegate.swift */; };
-		BBF63A0D22B2452F00106059 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF63A0C22B2452F00106059 /* ViewController.swift */; };
-		BBF63A1022B2452F00106059 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBF63A0E22B2452F00106059 /* Main.storyboard */; };
+		BBF63A0D22B2452F00106059 /* HeroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF63A0C22B2452F00106059 /* HeroViewController.swift */; };
 		BBF63A1222B2453000106059 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBF63A1122B2453000106059 /* Assets.xcassets */; };
 		BBF63A1522B2453000106059 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBF63A1322B2453000106059 /* LaunchScreen.storyboard */; };
+		BBF63A2022B24A4600106059 /* HeroTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF63A1F22B24A4600106059 /* HeroTableViewCell.swift */; };
+		BBF63A2222B24DA700106059 /* ExNSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF63A2122B24DA700106059 /* ExNSObject.swift */; };
+		BBF63A2422B2505700106059 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF63A2322B2505700106059 /* MainTabBarController.swift */; };
+		BBF63A2622B2533E00106059 /* HeroDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF63A2522B2533E00106059 /* HeroDetailViewController.swift */; };
+		BBF63A2822B2551000106059 /* ScrollViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF63A2722B2551000106059 /* ScrollViewProtocol.swift */; };
+		BBF63A3022B256D000106059 /* CardTransitionConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF63A2B22B256D000106059 /* CardTransitionConstants.swift */; };
+		BBF63A3122B256D000106059 /* CardTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF63A2C22B256D000106059 /* CardTransition.swift */; };
+		BBF63A3222B256D000106059 /* CardPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF63A2D22B256D000106059 /* CardPresentationController.swift */; };
+		BBF63A3322B256D000106059 /* PresentCardAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF63A2E22B256D000106059 /* PresentCardAnimator.swift */; };
+		BBF63A3422B256D000106059 /* DismissCardAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF63A2F22B256D000106059 /* DismissCardAnimator.swift */; };
+		BBF63A3622B2581D00106059 /* ExUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF63A3522B2581D00106059 /* ExUIView.swift */; };
+		BBF63A3822B258F600106059 /* PushIntaractiveButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF63A3722B258F600106059 /* PushIntaractiveButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2E6FFF007B5C632BD99F3F2A /* Pods-CustomTransition.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomTransition.debug.xcconfig"; path = "Target Support Files/Pods-CustomTransition/Pods-CustomTransition.debug.xcconfig"; sourceTree = "<group>"; };
+		346C7A43F7E629C83EC7E754 /* Pods-CustomTransition.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomTransition.release.xcconfig"; path = "Target Support Files/Pods-CustomTransition/Pods-CustomTransition.release.xcconfig"; sourceTree = "<group>"; };
+		B0E596156E4AF57789669C40 /* Pods_CustomTransition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CustomTransition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBF63A0722B2452F00106059 /* CustomTransition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomTransition.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBF63A0A22B2452F00106059 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BBF63A0C22B2452F00106059 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BBF63A0F22B2452F00106059 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BBF63A0C22B2452F00106059 /* HeroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroViewController.swift; sourceTree = "<group>"; };
 		BBF63A1122B2453000106059 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BBF63A1422B2453000106059 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BBF63A1622B2453000106059 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BBF63A1F22B24A4600106059 /* HeroTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroTableViewCell.swift; sourceTree = "<group>"; };
+		BBF63A2122B24DA700106059 /* ExNSObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExNSObject.swift; sourceTree = "<group>"; };
+		BBF63A2322B2505700106059 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		BBF63A2522B2533E00106059 /* HeroDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDetailViewController.swift; sourceTree = "<group>"; };
+		BBF63A2722B2551000106059 /* ScrollViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollViewProtocol.swift; sourceTree = "<group>"; };
+		BBF63A2B22B256D000106059 /* CardTransitionConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardTransitionConstants.swift; sourceTree = "<group>"; };
+		BBF63A2C22B256D000106059 /* CardTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardTransition.swift; sourceTree = "<group>"; };
+		BBF63A2D22B256D000106059 /* CardPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardPresentationController.swift; sourceTree = "<group>"; };
+		BBF63A2E22B256D000106059 /* PresentCardAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentCardAnimator.swift; sourceTree = "<group>"; };
+		BBF63A2F22B256D000106059 /* DismissCardAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DismissCardAnimator.swift; sourceTree = "<group>"; };
+		BBF63A3522B2581D00106059 /* ExUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExUIView.swift; sourceTree = "<group>"; };
+		BBF63A3722B258F600106059 /* PushIntaractiveButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushIntaractiveButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +55,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BBC3D086E5F37BDEA1C7B50 /* Pods_CustomTransition.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1985DB7284AAB6DDF264A740 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B0E596156E4AF57789669C40 /* Pods_CustomTransition.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7455AB102BFF07688524F686 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2E6FFF007B5C632BD99F3F2A /* Pods-CustomTransition.debug.xcconfig */,
+				346C7A43F7E629C83EC7E754 /* Pods-CustomTransition.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		BBF639FE22B2452F00106059 = {
 			isa = PBXGroup;
 			children = (
 				BBF63A0922B2452F00106059 /* CustomTransition */,
 				BBF63A0822B2452F00106059 /* Products */,
+				7455AB102BFF07688524F686 /* Pods */,
+				1985DB7284AAB6DDF264A740 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +100,41 @@
 		BBF63A0922B2452F00106059 /* CustomTransition */ = {
 			isa = PBXGroup;
 			children = (
+				BBF63A1C22B2492600106059 /* Extension */,
+				BBF63A2A22B256D000106059 /* Transition */,
 				BBF63A0A22B2452F00106059 /* AppDelegate.swift */,
-				BBF63A0C22B2452F00106059 /* ViewController.swift */,
-				BBF63A0E22B2452F00106059 /* Main.storyboard */,
+				BBF63A2322B2505700106059 /* MainTabBarController.swift */,
+				BBF63A2722B2551000106059 /* ScrollViewProtocol.swift */,
+				BBF63A0C22B2452F00106059 /* HeroViewController.swift */,
+				BBF63A1F22B24A4600106059 /* HeroTableViewCell.swift */,
+				BBF63A2522B2533E00106059 /* HeroDetailViewController.swift */,
+				BBF63A3722B258F600106059 /* PushIntaractiveButton.swift */,
 				BBF63A1122B2453000106059 /* Assets.xcassets */,
 				BBF63A1322B2453000106059 /* LaunchScreen.storyboard */,
 				BBF63A1622B2453000106059 /* Info.plist */,
 			);
 			path = CustomTransition;
+			sourceTree = "<group>";
+		};
+		BBF63A1C22B2492600106059 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				BBF63A3522B2581D00106059 /* ExUIView.swift */,
+				BBF63A2122B24DA700106059 /* ExNSObject.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		BBF63A2A22B256D000106059 /* Transition */ = {
+			isa = PBXGroup;
+			children = (
+				BBF63A2B22B256D000106059 /* CardTransitionConstants.swift */,
+				BBF63A2C22B256D000106059 /* CardTransition.swift */,
+				BBF63A2D22B256D000106059 /* CardPresentationController.swift */,
+				BBF63A2E22B256D000106059 /* PresentCardAnimator.swift */,
+				BBF63A2F22B256D000106059 /* DismissCardAnimator.swift */,
+			);
+			path = Transition;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +144,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BBF63A1922B2453000106059 /* Build configuration list for PBXNativeTarget "CustomTransition" */;
 			buildPhases = (
+				4004498381BD752465D44B60 /* [CP] Check Pods Manifest.lock */,
 				BBF63A0322B2452F00106059 /* Sources */,
 				BBF63A0422B2452F00106059 /* Frameworks */,
 				BBF63A0522B2452F00106059 /* Resources */,
+				ACF7759207BC55C1DB1B3049 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,18 +198,76 @@
 			files = (
 				BBF63A1522B2453000106059 /* LaunchScreen.storyboard in Resources */,
 				BBF63A1222B2453000106059 /* Assets.xcassets in Resources */,
-				BBF63A1022B2452F00106059 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4004498381BD752465D44B60 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CustomTransition-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ACF7759207BC55C1DB1B3049 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CustomTransition/Pods-CustomTransition-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CustomTransition/Pods-CustomTransition-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BBF63A0322B2452F00106059 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BBF63A0D22B2452F00106059 /* ViewController.swift in Sources */,
+				BBF63A2022B24A4600106059 /* HeroTableViewCell.swift in Sources */,
+				BBF63A3622B2581D00106059 /* ExUIView.swift in Sources */,
+				BBF63A3422B256D000106059 /* DismissCardAnimator.swift in Sources */,
+				BBF63A3122B256D000106059 /* CardTransition.swift in Sources */,
+				BBF63A3222B256D000106059 /* CardPresentationController.swift in Sources */,
+				BBF63A2222B24DA700106059 /* ExNSObject.swift in Sources */,
+				BBF63A3022B256D000106059 /* CardTransitionConstants.swift in Sources */,
+				BBF63A2422B2505700106059 /* MainTabBarController.swift in Sources */,
+				BBF63A3822B258F600106059 /* PushIntaractiveButton.swift in Sources */,
+				BBF63A2622B2533E00106059 /* HeroDetailViewController.swift in Sources */,
+				BBF63A3322B256D000106059 /* PresentCardAnimator.swift in Sources */,
+				BBF63A0D22B2452F00106059 /* HeroViewController.swift in Sources */,
+				BBF63A2822B2551000106059 /* ScrollViewProtocol.swift in Sources */,
 				BBF63A0B22B2452F00106059 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -142,14 +275,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		BBF63A0E22B2452F00106059 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BBF63A0F22B2452F00106059 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		BBF63A1322B2453000106059 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -279,6 +404,7 @@
 		};
 		BBF63A1A22B2453000106059 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E6FFF007B5C632BD99F3F2A /* Pods-CustomTransition.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +424,7 @@
 		};
 		BBF63A1B22B2453000106059 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 346C7A43F7E629C83EC7E754 /* Pods-CustomTransition.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
