@@ -1,3 +1,4 @@
+
 import UIKit
 import SnapKit
 
@@ -24,31 +25,19 @@ final class PresentCardAnimator: NSObject, UIViewControllerAnimatedTransitioning
 
     private static func createBaseSpringAnimator(params: PresentCardAnimator.Params) -> UIViewPropertyAnimator {
 
-        // Damping between 0.7 (far away) and 1.0 (nearer)
-        // let cardPositionY = params.fromCardFrame.minY
-        // let distanceToBounce = abs(params.fromCardFrame.minY)
-        // let extentToBounce = cardPositionY < 0 ? params.fromCardFrame.height : UIScreen.main.bounds.height
-        // let dampFactorInterval: CGFloat = 0.5
-        // let damping: CGFloat = 1.0 - dampFactorInterval * (distanceToBounce / extentToBounce)
         let damping: CGFloat = 1.0
-
-        // Duration between 0.5 (nearer) and 0.9 (nearer)
-        // let baselineDuration: TimeInterval = CardTransitionConstants.animationDuration
-        // let maxDuration: TimeInterval = 0.9
-        // let duration: TimeInterval = baselineDuration + (maxDuration - baselineDuration) * TimeInterval(max(0, distanceToBounce)/UIScreen.main.bounds.height)
         let duration: TimeInterval = CardTransitionConstants.animationDuration
-
         let springTiming = UISpringTimingParameters(dampingRatio: damping, initialVelocity: .init(dx: 0, dy: 0))
+
         return UIViewPropertyAnimator(duration: duration, timingParameters: springTiming)
     }
 
     func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
-        // 1.
         return presentAnimationDuration
     }
 
     func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
-        // 2.
+
         transitionDriver = PresentCardTransitionDriver(params: params,
                                                        transitionContext: transitionContext,
                                                        baseAnimator: springAnimator)
@@ -56,12 +45,10 @@ final class PresentCardAnimator: NSObject, UIViewControllerAnimatedTransitioning
     }
 
     func animationEnded(_ transitionCompleted: Bool) {
-        // 4.
         transitionDriver = nil
     }
 
     func interruptibleAnimator(using transitionContext: UIViewControllerContextTransitioning) -> UIViewImplicitlyAnimating {
-        // 3.
         return transitionDriver!.animator
     }
 }

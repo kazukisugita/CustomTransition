@@ -1,3 +1,4 @@
+
 import UIKit
 
 final class CardTransition: NSObject, UIViewControllerTransitioningDelegate {
@@ -44,7 +45,6 @@ final class CardTransition: NSObject, UIViewControllerTransitioningDelegate {
         return nil
     }
 
-    // IMPORTANT: Must set modalPresentationStyle to `.custom` for this to be used.
     func presentationController(forPresented presented: UIViewController, presenting: UIViewController?, source: UIViewController) -> UIPresentationController? {
         return CardPresentationController(presentedViewController: presented, presenting: presenting)
     }
@@ -54,13 +54,9 @@ extension CardTransition {
 
     static func start(from fromView: UIView, wrapFrame: CGRect? = nil, presented: UIViewController) -> CardTransition {
 
-        // Get current frame on screen
         let currentCellFrame = fromView.layer.presentation()!.frame
-
-        // Convert current frame to screen's coordinates
         let cardPresentationFrameOnScreen = fromView.superview!.convert(currentCellFrame, to: nil)
 
-        // Get card frame without transform in screen's coordinates  (for the dismissing back later to original location)
         let cardFrameWithoutTransform = { () -> CGRect in
             let center = fromView.center
             let size = fromView.bounds.size
@@ -78,10 +74,10 @@ extension CardTransition {
                                            fromView: fromView,
                                            wrapFrame: wrapFrame)
         let transition = CardTransition(params: params)
+
         presented.transitioningDelegate = transition
-        // If `modalPresentationStyle` is not `.fullScreen`, this should be set to true to make status bar depends on presented controller.
         presented.modalPresentationCapturesStatusBarAppearance = true
-         presented.modalPresentationStyle = .custom
+        presented.modalPresentationStyle = .custom
 
         fromView.parentViewController?.present(presented, animated: true)
 
